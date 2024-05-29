@@ -1,0 +1,214 @@
+* {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: grey;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    color: yellow;
+    font-size: 40px;
+    height: 30px;
+    line-height: 40px;
+    background-color: black;
+    transition: height 3s ease;
+}
+
+h1:hover {
+    height: 40px;
+}
+
+.choices {
+    display: flex;
+    border-radius: 50%;
+    gap: 100px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice img {
+    height: 165px;
+    width: 165px;
+    display: flex;
+    padding-top: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice {
+    height: 190px;
+    width: 185px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.des {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 110px;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.msg-box {
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 400px;
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Small Mobile Phones (Portrait) */
+@media (max-width: 360px) {
+    * {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choice img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    .des {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .msg-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Small Mobile Phones (Landscape), Larger Mobile Phones, Tablets */
+@media (min-width: 361px) and (max-width: 768px) {
+    * {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .choice img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .choice {
+        height: 150px;
+        width: 150px;
+    }
+
+    .des {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .msg-box {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Tablets, Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    * {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .choices {
+        gap: 50px;
+    }
+
+    .choice img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .choice {
+        height: 170px;
+        width: 170px;
+    }
+
+    .des {
+        gap: 60px;
+    }
+
+    .msg-box {
+        gap: 200px;
+    }
+}
+
+/* Larger Laptops, Desktops */
+@media (min-width: 1025px) {
+    * {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .choices {
+        gap: 100px;
+    }
+
+    .choice img {
+        height: 165px;
+        width: 165px;
+    }
+
+    .choice {
+        height: 190px;
+        width: 185px;
+    }
+
+    .des {
+        gap: 110px;
+    }
+
+    .msg-box {
+        gap: 400px;
+    }
+}
